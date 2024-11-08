@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - HearWise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://www.iconfinder.com/icons/4220305/user_profile_person_icon" type="image/x-icon">
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex flex-col">
+    <!-- Navbar Section -->
+    <nav class="bg-blue-600 p-4 flex justify-between items-center">
+        <a href="#" class="text-white text-2xl font-bold">HearWise</a>
+        <div class="flex items-center space-x-4">
+            <img src="https://www.iconfinder.com/icons/4220305/user_profile_person_icon" alt="Profile Icon"
+                class="w-8 h-8 rounded-full border-2 border-white">
+            <a href="/account" class="text-white font-semibold hover:text-blue-200 transition duration-300 ease-in-out">
+                Account
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-10 rounded-xl shadow-lg max-w-md w-full">
+            <div class="text-center mb-6">
+                <h1 class="text-3xl font-semibold text-gray-800">Welcome, <span class="font-bold text-blue-600">{{ name }}</span>!</h1>
+                <p class="text-gray-500">This is your personalized account dashboard.</p>
+            </div>
+
+            <div class="mt-8">
+                <p class="text-lg text-gray-700">You're successfully logged in! Here you can manage your preferences and more.</p>
+            </div>
+
+            <div class="mt-6 flex justify-center">
+                <a href="/account" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-500 transition duration-300 ease-in-out">
+                    Go to Account Settings
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
